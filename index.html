@@ -1,188 +1,167 @@
-Here is the consolidated, final version of your `index.html`. It has been **innovated** to include the login modal, refined hover effects, and the complete **extensive** copy we’ve developed.
-
-This build is **directed** at a high-performance audience, **utilizing** Tailwind CSS for a sleek, responsive **industry** presence.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M / A / J | Visionary Performance</title>
+    <title>Hudson Yards Wellness | Visionary Performance</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
         
-        body { font-family: 'Inter', sans-serif; background-color: #f8f7f5; color: #1a1a1a; scroll-behavior: smooth; }
-        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
-        
-        /* Custom Gold Tone for The Founder Tier */
-        .gold-accent { color: #c5a059; }
-        .bg-gold { background-color: #c5a059; }
-        .border-gold { border-color: #c5a059; }
-
+        body { font-family: 'Inter', sans-serif; background-color: #f8f7f5; color: #1a1a1a; }
+        h1, h2, .serif { font-family: 'Playfair Display', serif; }
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070');
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070');
             background-size: cover;
             background-position: center;
         }
-        
-        .modal-hidden { display: none; }
     </style>
 </head>
 <body class="antialiased">
 
-    <nav class="flex justify-between items-center px-8 md:px-12 py-6 fixed w-full z-50 text-white backdrop-blur-sm bg-black/10 transition-all border-b border-white/10">
-        <div class="text-2xl tracking-[0.3em] font-semibold italic">M / A / J</div>
-        <div class="hidden md:flex space-x-12 text-[10px] uppercase tracking-[0.2em]">
-            <a href="#spa" class="hover:opacity-60 transition">The Spa</a>
-            <a href="#studio" class="hover:opacity-60 transition">The Studio</a>
-            <a href="#recovery" class="hover:opacity-60 transition">The Recovery Suite</a>
-            <a href="#memberships" class="hover:opacity-60 transition text-yellow-500">Access</a>
+    <nav class="flex justify-between items-center px-12 py-8 fixed w-full z-50 text-white bg-gradient-to-b from-black/50 to-transparent">
+        <div class="text-2xl tracking-widest font-semibold italic">M / A / J</div>
+        <div class="hidden md:flex space-x-12 text-sm uppercase tracking-widest">
+            <a href="#spa" class="hover:opacity-70 transition">The Spa</a>
+            <a href="#studio" class="hover:opacity-70 transition">The Studio</a>
+            <a href="#recovery" class="hover:opacity-70 transition">The Recovery Suite</a>
         </div>
-        <button onclick="toggleModal()" class="border border-white/30 px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-white hover:text-black transition">Login</button>
     </nav>
 
     <section class="hero-bg h-screen flex flex-col justify-center items-center text-center text-white px-6">
-        <h1 class="text-5xl md:text-8xl mb-6 italic font-light">A Record Across Excellence</h1>
-        <p class="max-w-2xl text-sm md:text-lg font-light tracking-[0.1em] leading-relaxed opacity-90 uppercase">
-            Facilitated for the modern titan. An extensive ecosystem utilizing the highest standards of the industry.
+        <h1 class="text-5xl md:text-7xl mb-6 italic">A Record Across Excellence</h1>
+        <p class="max-w-2xl text-lg md:text-xl font-light tracking-wide leading-relaxed">
+            Facilitated for the modern titan. An extensive ecosystem of longevity and performance utilizing the highest standards of the industry.
         </p>
-        <div class="mt-12">
-            <a href="#memberships" class="px-10 py-4 bg-white text-black text-[10px] uppercase tracking-[0.3em] hover:bg-neutral-200 transition font-bold">Inquire for Access</a>
+        <div class="mt-12 flex space-x-6">
+            <button class="px-8 py-3 bg-white text-black text-sm uppercase tracking-widest hover:bg-black hover:text-white transition">Explore the Suites</button>
         </div>
     </section>
 
-    <main class="max-w-7xl mx-auto px-6 py-32 space-y-48">
+    <main class="max-w-7xl mx-auto px-6 py-24 space-y-48">
 
-        <section id="spa" class="grid md:grid-cols-2 gap-20 items-center">
-            <div class="space-y-8">
-                <span class="text-[10px] uppercase tracking-[0.4em] opacity-40 font-bold">01 — Sanctuary</span>
-                <h2 class="text-5xl italic leading-tight">The Hudson Spa</h2>
-                <p class="text-lg leading-relaxed opacity-70 font-light">
-                    Directed toward profound restoration. Our environment has been innovated to provide mental clarity, leveraging natural stone and panoramic skyline views to facilitate a state of total stillness.
+        <section id="spa" class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <span class="text-sm uppercase tracking-widest opacity-50">01 — Sanctuary</span>
+                <h2 class="text-4xl md:text-5xl">The Hudson Spa</h2>
+                <p class="text-lg leading-relaxed opacity-80">
+                    Directed toward profound restoration. Our spa environment has been innovated to provide mental clarity, leveraging natural stone and panoramic skyline views to facilitate a state of total stillness.
                 </p>
             </div>
-            <div class="aspect-[4/5] bg-neutral-200 overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=2070" loading="lazy" class="w-full h-full object-cover grayscale-[20%]" alt="Luxury Spa">
+            <div class="h-[500px] bg-neutral-200">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=2070" class="w-full h-full object-cover shadow-2xl" alt="Luxury Spa">
             </div>
         </section>
 
-        <section id="studio" class="grid md:grid-cols-2 gap-20 items-center">
-            <div class="aspect-[4/5] bg-neutral-200 order-last md:order-first overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=2070" loading="lazy" class="w-full h-full object-cover" alt="Pilates Studio">
+        <section id="studio" class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="h-[500px] bg-neutral-200 order-last md:order-first">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=2070" class="w-full h-full object-cover shadow-2xl" alt="Pilates Studio">
             </div>
-            <div class="space-y-8">
-                <span class="text-[10px] uppercase tracking-[0.4em] opacity-40 font-bold">02 — Movement</span>
-                <h2 class="text-5xl italic leading-tight">The Pilates Studio</h2>
-                <p class="text-lg leading-relaxed opacity-70 font-light">
+            <div class="space-y-6">
+                <span class="text-sm uppercase tracking-widest opacity-50">02 — Movement</span>
+                <h2 class="text-4xl md:text-5xl">The Pilates Studio</h2>
+                <p class="text-lg leading-relaxed opacity-80">
                     Utilizing advanced biomechanics to build an ultra-fit foundation. Spearheaded by elite instructors, the studio offers an extensive range of modalities designed for physical mastery.
                 </p>
             </div>
         </section>
 
-        <section id="recovery" class="bg-zinc-900 text-white p-12 md:p-24 grid md:grid-cols-2 gap-16 items-center shadow-2xl">
-            <div class="space-y-8">
-                <span class="text-[10px] uppercase tracking-[0.4em] text-yellow-500 font-bold">03 — Biohacking</span>
-                <h2 class="text-5xl italic">The Recovery Suite</h2>
-                <p class="text-lg leading-relaxed opacity-60 font-light">
-                    Leveraging the latest in longevity science. We have innovated a suite dedicated to the detailed optimization of the human system through cold-immersion and red-light technology.
+        <section id="recovery" class="grid md:grid-cols-2 gap-16 items-center text-white bg-zinc-900 p-12 shadow-2xl">
+            <div class="space-y-6">
+                <span class="text-sm uppercase tracking-widest text-red-500">03 — Biohacking</span>
+                <h2 class="text-4xl md:text-5xl">The Recovery Suite</h2>
+                <p class="text-lg leading-relaxed opacity-70">
+                    Leveraging the latest in longevity science. From cryotherapy to red light therapy, we have innovated a suite dedicated to the detailed optimization of the human system.
                 </p>
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <div class="h-64 bg-zinc-800 border border-white/5"></div>
-                <div class="h-64 bg-zinc-800 border border-white/5"></div>
+                <div class="h-64 bg-zinc-800"></div>
+                <div class="h-64 bg-zinc-800"></div>
             </div>
         </section>
 
-        <section id="memberships" class="py-12">
-            <div class="text-center mb-20">
-                <h2 class="text-5xl italic mb-4">Membership Tiers</h2>
-                <p class="opacity-40 uppercase tracking-[0.3em] text-[10px] font-bold">Selection Based on Character & Intent</p>
+        <section id="memberships" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl italic mb-4">Membership Tiers</h2>
+            <p class="opacity-60 uppercase tracking-widest text-sm font-semibold">Innovated for the Visionary</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="border border-neutral-200 p-10 hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl mb-4">The Visionary</h3>
+                    <p class="text-sm opacity-70 mb-8 italic">Focus: Core Wellness</p>
+                    <ul class="space-y-4 text-sm opacity-80">
+                        <li>• Extensive Spa & Studio access</li>
+                        <li>• Detailed physical assessments</li>
+                        <li>• Utilizing standard facilities</li>
+                    </ul>
+                </div>
+                <button class="mt-12 w-full py-3 border border-black uppercase tracking-widest text-xs hover:bg-black hover:text-white transition">Inquire</button>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="border border-neutral-200 p-12 hover:border-black transition duration-500 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-2xl mb-2">The Visionary</h3>
-                        <p class="text-[10px] uppercase tracking-widest opacity-40 mb-10">Standard Excellence</p>
-                        <ul class="space-y-4 text-xs tracking-wide opacity-70">
-                            <li>• Extensive Spa & Studio access</li>
-                            <li>• Detailed physical assessments</li>
-                            <li>• Utilizing standard facilities</li>
-                        </ul>
-                    </div>
-                    <button class="mt-12 w-full py-4 border border-black text-[10px] uppercase tracking-[0.2em] hover:bg-black hover:text-white transition">Inquire</button>
-                </div>
 
-                <div class="border-2 border-black p-12 shadow-2xl flex flex-col justify-between relative scale-105 bg-white">
-                    <span class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-black text-white px-6 py-1 text-[8px] tracking-[0.4em] uppercase font-bold">Preferred</span>
-                    <div>
-                        <h3 class="text-2xl mb-2">The Titan</h3>
-                        <p class="text-[10px] uppercase tracking-widest opacity-40 mb-10">High Performance</p>
-                        <ul class="space-y-4 text-xs tracking-wide font-semibold">
-                            <li>• Biohacking & Recovery access</li>
-                            <li>• Spearheaded performance coaching</li>
-                            <li>• Priority directed bookings</li>
-                        </ul>
-                    </div>
-                    <button class="mt-12 w-full py-4 bg-black text-white text-[10px] uppercase tracking-[0.2em] hover:bg-zinc-800 transition">Apply Now</button>
+            <div class="border-2 border-black p-10 shadow-2xl flex flex-col justify-between relative">
+                <span class="absolute top-0 right-10 -translate-y-1/2 bg-black text-white px-4 py-1 text-[10px] tracking-widest uppercase">Preferred</span>
+                <div>
+                    <h3 class="text-2xl mb-4">The Titan</h3>
+                    <p class="text-sm opacity-70 mb-8 italic">Focus: Performance</p>
+                    <ul class="space-y-4 text-sm opacity-80 font-semibold">
+                        <li>• Biohacking & Recovery Suite access</li>
+                        <li>• Spearheaded performance coaching</li>
+                        <li>• Priority directed bookings</li>
+                    </ul>
                 </div>
-
-                <div class="border border-gold p-12 bg-neutral-50 flex flex-col justify-between group hover:shadow-2xl transition duration-500">
-                    <div>
-                        <h3 class="text-2xl mb-2 gold-accent italic">The Founder</h3>
-                        <p class="text-[10px] uppercase tracking-widest opacity-40 mb-10">Legacy & Mastery</p>
-                        <ul class="space-y-4 text-xs tracking-wide opacity-80">
-                            <li>• 24/7 Private Facility Access</li>
-                            <li>• Bespoke IV Therapy protocols</li>
-                            <li>• Partner guest privileges</li>
-                        </ul>
-                    </div>
-                    <button class="mt-12 w-full py-4 bg-gold text-white text-[10px] uppercase tracking-[0.2em] hover:opacity-80 transition font-bold">Invite Only</button>
-                </div>
+                <button class="mt-12 w-full py-3 bg-black text-white uppercase tracking-widest text-xs hover:bg-neutral-800 transition">Apply</button>
             </div>
-        </section>
+
+            <div class="border border-neutral-200 p-10 hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl mb-4">The Founder</h3>
+                    <p class="text-sm opacity-70 mb-8 italic">Focus: Legacy & Mastery</p>
+                    <ul class="space-y-4 text-sm opacity-80">
+                        <li>• 24/7 Private Facility Access</li>
+                        <li>• Bespoke IV Therapy protocols</li>
+                        <li>• Partner guest privileges</li>
+                    </ul>
+                </div>
+                <button class="mt-12 w-full py-3 border border-black uppercase tracking-widest text-xs hover:bg-black hover:text-white transition">Invite Only</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="insights" class="py-24 bg-[#f8f7f5] border-t border-neutral-200">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-end mb-12">
+            <h2 class="text-4xl italic">Strategic Insights</h2>
+            <a href="#" class="text-sm uppercase tracking-widest border-b border-black pb-1">View All</a>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+            <article class="group cursor-pointer">
+                <div class="overflow-hidden mb-6 bg-neutral-300 h-64">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1974" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Leadership">
+                </div>
+                <h4 class="text-xl mb-2 italic">The Biohacking Edge: Leveraging Biology for Industry Dominance</h4>
+                <p class="opacity-60 text-sm">How Mason and his team facilitated a new standard for executive stamina...</p>
+            </article>
+            <article class="group cursor-pointer">
+                <div class="overflow-hidden mb-6 bg-neutral-300 h-64">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2069" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Performance">
+                </div>
+                <h4 class="text-xl mb-2 italic">Architecture of Stillness: Innovations in Mental Clarity</h4>
+                <p class="opacity-60 text-sm">Avery Lane directs the intersection of environment and focus...</p>
+            </article>
+        </div>
+    </div>
+</section>
 
     </main>
 
-    <div id="login-modal" class="modal-hidden fixed inset-0 bg-black/95 z-[100] flex items-center justify-center backdrop-blur-md px-4">
-        <div class="bg-white p-12 max-w-md w-full shadow-2xl relative border-t-4 border-gold">
-            <button onclick="toggleModal()" class="absolute top-4 right-6 text-3xl font-light hover:opacity-50">&times;</button>
-            <div class="text-center mb-10">
-                <div class="text-2xl tracking-[0.3em] font-semibold italic mb-2">M / A / J</div>
-                <h3 class="text-[10px] uppercase tracking-widest opacity-50">Private Concierge Access</h3>
-            </div>
-            <form class="space-y-8">
-                <div>
-                    <label class="block text-[10px] uppercase tracking-widest mb-2 opacity-50">Digital Key</label>
-                    <input type="text" class="w-full border-b border-black/20 py-2 focus:outline-none focus:border-black bg-transparent transition">
-                </div>
-                <div>
-                    <label class="block text-[10px] uppercase tracking-widest mb-2 opacity-50">Biometric PIN</label>
-                    <input type="password" class="w-full border-b border-black/20 py-2 focus:outline-none focus:border-black bg-transparent transition">
-                </div>
-                <button type="submit" class="w-full py-4 bg-black text-white text-[10px] uppercase tracking-[0.3em] hover:bg-neutral-800 transition font-bold">
-                    Enter Portal
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <footer class="py-24 border-t border-neutral-200 text-center bg-white">
-        <div class="text-3xl italic tracking-[0.2em] mb-8 font-semibold text-neutral-300">M / A / J</div>
-        <p class="text-[9px] uppercase tracking-[0.5em] opacity-40">&copy; 2026 Hudson Yards. All Rights Facilitated.</p>
+    <footer class="py-24 border-t border-neutral-200 text-center">
+        <div class="text-2xl italic mb-8">M / A / J</div>
+        <p class="text-sm uppercase tracking-widest opacity-40">&copy; 2026 Hudson Yards. All Rights Facilitated.</p>
     </footer>
 
-    <script>
-        function toggleModal() {
-            const modal = document.getElementById('login-modal');
-            modal.classList.toggle('modal-hidden');
-        }
-    </script>
 </body>
 </html>
-
-```
-
-**Would you like me to help you develop the "Detailed Performance Review" dashboard that members see once they log into this portal?**
